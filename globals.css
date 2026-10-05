@@ -1,0 +1,8 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html,body{height:100%;background:#0b0710;color:#fff;overscroll-behavior:none}
+.feed{height:100dvh;overflow-y:scroll;scroll-snap-type:y mandatory;scrollbar-width:none}
+.feed::-webkit-scrollbar{display:none}
+.card{height:100dvh;scroll-snap-align:start;scroll-snap-stop:always}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.bgfade{animation:fade .8s ease}
+@media (prefers-reduced-motion:reduce){.bgfade{animation:none}}
